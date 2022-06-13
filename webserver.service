@@ -1,0 +1,12 @@
+[Unit]
+Description=webserver
+
+[Service]
+Type=simple
+User=root
+WorkingDirectory=/root/webserver
+ExecStart=/root/webserver/server
+PrivateTmp=true
+
+[Install]
+WantedBy=multi-user.target
